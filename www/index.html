@@ -34,13 +34,20 @@
             </div>
 
             <div data-role="content" style="text-align: center;">
-                <a class="ui-btn but_blue" href="main.html">Main Page</a>
                 <div class="ui-grid-a">
                     <div class="ui-block-a">
-                        <a class="ui-btn but_orange" href="login.html">Login</a>
+                        <a class="ui-btn but_blue" id="main_page_button" href="main.html">Main Page</a>
                     </div>
                     <div class="ui-block-b">
-                        <a class="ui-btn but_green" href="register.html">Register</a>
+                        <a class="ui-btn but_red" id="logout_button" href="#">Logout</a>
+                    </div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a class="ui-btn but_orange" id="login_button" href="login.html">Login</a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a class="ui-btn but_green" id="register_button" href="register.html">Register</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +64,7 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/libs/jquery/jquery.min.js"></script>
         <script type="text/javascript">
-            // jquery mobile settings on mobile init
+            /* jquery mobile default settings */
             $(document).bind('mobileinit', function () {
                 $.mobile.page.prototype.options.domCache = true;
                 $.support.cors = true;
