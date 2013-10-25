@@ -1,1 +1,16 @@
 /* custom css goes here */
+
+.but_orange{
+    padding: 60px;
+    background: #FFA500 !important;
+}
+
+.but_blue{
+    padding: 60px;
+    background: #09F !important;
+}
+
+.but_green{
+    padding: 60px;
+    background: #00A800 !important;
+}

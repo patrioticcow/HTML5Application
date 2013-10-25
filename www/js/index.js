@@ -40,11 +40,8 @@ $ (function () {
 	FastClick.attach (document.body);
 });
 
-var rest = 'http://YourRestApiLocation/';
-
-$ (document).on ("pageinit", function () {
-	console.log ("%c each page init", "color: blue;");
-});
+var rest = 'http://YourRestApiLocation/', 
+    email;
 
 $ (document).on ('pageinit', '#index-page', function () {
 	if (email) {
@@ -54,7 +51,7 @@ $ (document).on ('pageinit', '#index-page', function () {
 });
 
 $ (document).on ('pageshow', '#main-page', function () {
-	console.log ('pagebeforeshow main-page');
+    
 });
 
 

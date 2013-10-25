@@ -40,7 +40,8 @@ $ (function () {
 	FastClick.attach (document.body);
 });
 
-var rest = 'http://YourRestApiLocation/';
+var rest = 'http://YourRestApiLocation/', 
+        email;
 
 $ (document).on ("pageinit", function () {
 	console.log ("%c each page init", "color: blue;");
